@@ -36,7 +36,7 @@
 
         default_layer {
             bindings = <
-&none       &none  &none  &none  &none  &none  &none                                                     &none      &none  &none  &none      &none    &none     &none
+&none       &none  &none  &none  &none  &none  &kp LG(Z)                                                 &none      &none  &none  &none      &none    &none     &none
 &kp TAB     &kp Q  &kp W  &kp E  &kp R  &kp T  &none                                                     &none      &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BACKSPACE
 &kp LSHIFT  &kp A  &kp S  &kp D  &kp F  &kp G  &none      &none  &none             &none          &none  &none      &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B                    &none             &none                            &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
@@ -66,11 +66,11 @@
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &none                                             &none                   &none  &none               &none       &none                &none      &none
-&none  &none         &none         &kp LG(E)     &kp LG(R)        &none         &bootloader                                       &bootloader             &none  &none               &none       &none                &kp LG(L)  &none
-&none  &none         &none         &none         &none            &kp LG(G)     &none        &none  &none      &bt BT_CLR  &none  &rgb_ug RGB_MEFS_CMD 5  &none  &kp LG(LEFT_ARROW)  &none       &kp LG(RIGHT_ARROW)  &none      &none
-&none  &none         &none         &none         &none            &none                             &none      &none                                      &none  &none               &none       &none                &none      &none
-&none  &none         &none         &bl BL_TOG    &rgb_ug RGB_TOG                &none        &none  &none      &none       &mo 3  &none                          &bl BL_INC          &bl BL_DEC  &none                &none      &none
+&none         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &none                                             &none                   &none  &none               &none               &none                &none      &none
+&none         &none         &none         &kp LG(E)     &kp LG(R)        &none         &bootloader                                       &bootloader             &none  &none               &kp LG(UP_ARROW)    &none                &kp LG(L)  &none
+&none         &none         &none         &none         &none            &kp LG(G)     &none        &none  &none      &bt BT_CLR  &none  &rgb_ug RGB_MEFS_CMD 5  &none  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &none      &none
+&none         &none         &none         &none         &none            &none                             &none      &none                                      &none  &none               &none               &none                &none      &none
+&kp LEFT_GUI  &none         &none         &bl BL_TOG    &rgb_ug RGB_TOG                &none        &none  &none      &none       &mo 3  &none                          &bl BL_INC          &bl BL_DEC          &none                &none      &none
             >;
         };
     };
